@@ -1,1 +1,46 @@
-<p>weather-forecast-view works!</p>
+<div class="container">
+  <div class="content m-5">
+    <div class="row">
+      <div class="col-sm-10">
+        <h1 class="title">
+          INSTAWEATHER
+        </h1>
+      </div>
+      <div class="col-sm-2">
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline-secondry">C</button>
+          <button type="button" class="btn btn-outline-secondry">F</button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-10">
+        <div class="location">
+          <p>New Cairo</p>
+          <p>{{weatherData.currently.time | date}}</p>
+          <p>{{weatherData.currently.summary}}</p>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <p>{{weatherData.currently.temperature}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="dataMode === 'daily'" (click)="dataMode = 'daily'"
+            aria-current="page">Daily</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [class.active]="dataMode === 'hourly'" (click)="dataMode = 'hourly'">Houry</a>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="dataMode === 'daily'" class="row">
+      <p>daily data</p>
+    </div>
+    <div *ngIf="dataMode === 'hourly'" class="row">
+      <p>hourly data</p>
+    </div>
+  </div>
+</div>
