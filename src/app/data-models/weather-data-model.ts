@@ -15,7 +15,7 @@ export interface IWeatherData {
   },
   flags: {
     sources: string[];
-    nearest_station: number;
+    "nearest-station": number;
     units: string
   },
   offset: number
