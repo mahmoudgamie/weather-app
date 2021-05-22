@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-hourly-data',
+  selector: 'hourly-data',
   templateUrl: './hourly-data.component.html',
   styleUrls: ['./hourly-data.component.css']
 })

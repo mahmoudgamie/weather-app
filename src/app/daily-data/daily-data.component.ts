@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-daily-data',
+  selector: 'daily-data',
   templateUrl: './daily-data.component.html',
   styleUrls: ['./daily-data.component.css']
 })
