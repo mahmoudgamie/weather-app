@@ -41,7 +41,7 @@ interface ICurrentlyData {
   ozone: number;
 }
 
-interface IHourlyData {
+export interface IHourlyData {
   time: number;
   summary: string;
   icon: string;
@@ -62,7 +62,7 @@ interface IHourlyData {
 }
 
 
-interface IDailyData {
+export interface IDailyData {
   time: number;
   summary: string;
   icon: string;
