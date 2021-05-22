@@ -8,10 +8,12 @@
       </div>
       <div class="col-sm-2">
         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" (click)="unit = 'C'" name="btnradio" id="btnradio1" autocomplete="off" [checked]="unit === 'C'">
+          <input type="radio" class="btn-check" (click)="unit = 'C'" name="btnradio" id="btnradio1" autocomplete="off"
+            [checked]="unit === 'C'">
           <label class="btn btn-outline-primary" for="btnradio1">C</label>
-        
-          <input type="radio" class="btn-check" (click)="unit = 'F'" name="btnradio" id="btnradio2" autocomplete="off" [checked]="unit === 'F'">
+
+          <input type="radio" class="btn-check" (click)="unit = 'F'" name="btnradio" id="btnradio2" autocomplete="off"
+            [checked]="unit === 'F'">
           <label class="btn btn-outline-primary" for="btnradio2">F</label>
         </div>
       </div>
@@ -26,6 +28,10 @@
       </div>
       <div class="col-sm-2">
         <p class="degree">{{weatherData.currently.temperature | temeratureConverter : unit}}</p>
+        <p>
+          <span class="degree">{{weatherData.daily.data[0].temperatureHigh | temeratureConverter: unit}}</span> /
+          <span class="degree">{{weatherData.daily.data[0].temperatureLow | temeratureConverter: unit}}</span>
+        </p>
       </div>
     </div>
     <div class="row">
@@ -40,10 +46,10 @@
       </ul>
     </div>
     <div *ngIf="dataMode === 'daily'" class="row">
-      <p>daily data</p>
+      <daily-data [data]="weatherData.daily.data" [unit]="unit"></daily-data>
     </div>
     <div *ngIf="dataMode === 'hourly'" class="row">
-      <p>hourly data</p>
+      <hourly-data [data]="weatherData.hourly.data" [unit]="unit"></hourly-data>
     </div>
   </div>
 </div>
