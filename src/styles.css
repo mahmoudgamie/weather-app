@@ -5,3 +5,8 @@
 .list-group-horizontal>.list-group-item.data-item {
   border: none;
 }
+
+.data-container {
+  white-space: nowrap;
+  overflow: auto;
+}
