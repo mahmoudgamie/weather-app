@@ -1,1 +1,12 @@
-<p>daily-data works!</p>
+<div class="row">
+  <div class="co-sm-12">
+    <div class="data-container">
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item data-item" *ngFor="let item of data">
+          <p class="degree">{{item.temperatureHigh | temeratureConverter: unit}}</p>
+          <p>{{item.time | date}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IDailyData } from '../data-models/weather-data-model';
 
 @Component({
   selector: 'daily-data',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./daily-data.component.css']
 })
 export class DailyDataComponent implements OnInit {
+  @Input() data: IDailyData[]
+  @Input() unit: string;
 
   constructor() { }
 
