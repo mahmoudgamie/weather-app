@@ -10,6 +10,7 @@ import { WeatherService } from '../services/weather.service'
 export class WeatherForecastViewComponent implements OnInit {
 
   dataMode: string = 'daily';
+  unit: string = 'F'
   weatherData: IWeatherData;
   constructor(private weatherService: WeatherService) { }
 
