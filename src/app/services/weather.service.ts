@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
+
+import { IWeatherData } from '../data-models/weather-data-model'
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +23,7 @@ export class WeatherService {
     })
   }
 
-  fetchData() {
+  fetchData(): IWeatherData {
     return {
       "latitude": 30.035148799999998,
       "longitude": 31.342592,
