@@ -2,7 +2,7 @@
   <div class="co-sm-12">
     <div class="data-container">
       <ul class="list-group list-group-horizontal">
-        <li class="list-group-item data-item" *ngFor="let item of data">
+        <li class="list-group-item data-item" *ngFor="let item of data.slice(0, 24)">
           <p class="degree">{{item.temperature | temeratureConverter : unit}}</p>
           <p>{{item.time | date}}</p>
         </li>
