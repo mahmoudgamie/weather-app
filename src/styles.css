@@ -15,6 +15,14 @@ body {
   color: #fff !important;
 }
 
+.push-end {
+  text-align: end;
+}
+
+.center {
+  text-align: center;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }

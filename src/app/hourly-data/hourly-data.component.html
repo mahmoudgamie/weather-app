@@ -1,10 +1,11 @@
 <div class="row">
-  <div class="col-sm-12">
+  <div class="col-sm-12 p-0">
     <div class="data-container">
       <ul class="list-group list-group-horizontal">
-        <li class="list-group-item data-item bg-transparent text-white" *ngFor="let item of data.slice(0, 24)">
-          <p class="degree">{{item.temperature | temeratureConverter : unit}}</p>
-          <p>{{item.time * 1000 | date: "h:mm"}}</p>
+        <li class="list-group-item data-item bg-transparent text-white center" *ngFor="let item of data.slice(0, 24)">
+          <p class="pt-1">{{item.time * 1000 | date: "h:mm"}}</p>
+          <img class="img-fluid" src="../../assets/images/{{item.icon + '-small.png'}}" alt="{{item.summary}}"/>
+          <p class="degree mt-2 pt-3">{{item.temperature | temeratureConverter : unit}}</p>
         </li>
       </ul>
     </div>

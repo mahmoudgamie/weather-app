@@ -26,7 +26,7 @@
           <p class="date">{{weatherData.currently.time * 1000 | date: "E d, y" }}</p>
           <div>
             <img class="img-fluid" src="../../assets/images/{{weatherData.currently.icon + '.png'}}"
-              alt="{{weatherData.currently.icon}}">
+              alt="{{weatherData.currently.summary}}">
             <p class="mt-4">{{weatherData.currently.summary}}</p>
           </div>
         </div>
@@ -35,8 +35,9 @@
         <h2 class="degree display-1 current-temp d-flex justify-content-md-end">{{weatherData.currently.temperature |
           temeratureConverter : unit}}</h2>
         <p class="current-summary d-flex justify-content-md-end">
-          <span class="degree">{{weatherData.daily.data[0].temperatureHigh | temeratureConverter: unit}}</span> /
-          <span class="degree">{{weatherData.daily.data[0].temperatureLow | temeratureConverter: unit}}</span>
+          <span class="degree m-1">{{weatherData.daily.data[0].temperatureHigh | temeratureConverter: unit}}</span> 
+          <span class="m-1">/</span> 
+          <span class="degree m-1"> {{weatherData.daily.data[0].temperatureLow | temeratureConverter: unit}}</span>
         </p>
         <p class="d-flex justify-content-md-end">{{weatherData.daily.data[0].summary}}</p>
       </div>
