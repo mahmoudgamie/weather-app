@@ -10,23 +10,26 @@ import { WeatherService } from '../services/weather.service'
 export class WeatherForecastViewComponent implements OnInit {
 
   dataMode: string = 'daily';
-  unit: string = 'F'
+  unit: string = 'F';
   weatherData: IWeatherData;
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
-    // navigator.geolocation.getCurrentPosition(({ coords }) => {
-    //   const long = coords.longitude;
-    //   const lat = coords.latitude;
-
-    //   // console.log(this.request_URL);
-    //   this.weatherService.fetchWeatherData(long, lat).subscribe(res => {
-    //     console.log(res);
-    //   })
-    // })
+    navigator.geolocation.getCurrentPosition(({ coords }) => {
+      const long = coords.longitude;
+      const lat = coords.latitude;
+      /**
+       * The API return s CORS Error
+       */
+      // this.weatherService.fetchWeatherData(long, lat).subscribe(res => {
+      //   console.log(res);
+      // })
+    })
     this.weatherData = this.fetchStaticData();
   }
-
+  /**
+   * fetch static data
+   */
   fetchStaticData(): IWeatherData {
     return this.weatherService.fetchData()
   }

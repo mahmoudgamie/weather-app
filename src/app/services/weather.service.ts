@@ -14,6 +14,9 @@ export class WeatherService {
 
   constructor(private httpClient: HttpClient) { }
 
+  /**
+   * This method is not used because of the CORS issue
+   */
   fetchWeatherData(long, lat) {
     this.request_URL += `${lat},${long}`
     return this.httpClient.get(this.request_URL, {
@@ -23,6 +26,9 @@ export class WeatherService {
     })
   }
 
+  /**
+   * Mockup data, acts as a temp static data
+   */
   fetchData(): IWeatherData {
     return {
       "latitude": 30.035148799999998,

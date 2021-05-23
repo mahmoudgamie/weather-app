@@ -7,6 +7,7 @@ import { IHourlyData } from '../data-models/weather-data-model';
   styleUrls: ['./hourly-data.component.css']
 })
 export class HourlyDataComponent implements OnInit {
+
   @Input() data: IHourlyData[]
   @Input() unit: string;
 
