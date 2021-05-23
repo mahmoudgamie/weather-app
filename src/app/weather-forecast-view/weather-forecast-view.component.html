@@ -6,33 +6,33 @@
           INSTAWEATHER
         </h1>
       </div>
-      <div class="col-sm-2 push-end">
+      <div class="col-sm-2 d-flex justify-content-end">
         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
           <input type="radio" class="btn-check" (click)="unit = 'C'" name="btnradio" id="btnradio1" autocomplete="off"
             [checked]="unit === 'C'">
-          <label class="btn btn-outline-secondary text-white border-0 shadow-none" [class.btn-checked]="unit === 'C'" for="btnradio1">C</label>
+          <label class="btn btn-outline-secondary border-0 shadow-none" [class.btn-checked]="unit === 'C'" for="btnradio1">C</label>
 
           <input type="radio" class="btn-check" (click)="unit = 'F'" name="btnradio" id="btnradio2" autocomplete="off"
             [checked]="unit === 'F'">
-          <label class="btn btn-outline-secondary text-white border-0 shadow-none" [class.btn-checked]="unit === 'F'" for="btnradio2">F</label>
+          <label class="btn btn-outline-secondary border-0 shadow-none" [class.btn-checked]="unit === 'F'" for="btnradio2">F</label>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-9">
+      <div class="col-md-6 col-sm-12">
         <div class="location">
-          <h2 class="sub-title">New Cairo</h2>
+          <h2 class="sub-title display-6">New Cairo</h2>
           <p class="date">{{weatherData.currently.time * 1000 | date: "E d, y" }}</p>
           <p>{{weatherData.currently.summary}}</p>
         </div>
       </div>
-      <div class="col-sm-3 push-end">
-        <h2 class="degree current-temp">{{weatherData.currently.temperature | temeratureConverter : unit}}</h2>
-        <p class="current-summary">
+      <div class="col-md-6 col-sm-12">
+        <h2 class="degree display-1 current-temp d-flex justify-content-md-end">{{weatherData.currently.temperature | temeratureConverter : unit}}</h2>
+        <p class="current-summary d-flex justify-content-md-end">
           <span class="degree">{{weatherData.daily.data[0].temperatureHigh | temeratureConverter: unit}}</span> /
           <span class="degree">{{weatherData.daily.data[0].temperatureLow | temeratureConverter: unit}}</span>
         </p>
-        <p>{{weatherData.daily.data[0].summary}}</p>
+        <p class="d-flex justify-content-md-end">{{weatherData.daily.data[0].summary}}</p>
       </div>
     </div>
     <div class="row mt-5">
