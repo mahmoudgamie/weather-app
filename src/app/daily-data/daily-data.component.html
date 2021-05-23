@@ -2,7 +2,7 @@
   <div class="col-sm-12">
     <div class="data-container">
       <ul class="list-group list-group-horizontal">
-        <li class="list-group-item data-item" *ngFor="let item of data">
+        <li class="list-group-item data-item bg-transparent text-white" *ngFor="let item of data">
           <p class="degree">{{item.temperatureHigh | temeratureConverter: unit}}</p>
           <p>{{item.time * 1000 | date: "E d, y" }}</p>
         </li>
