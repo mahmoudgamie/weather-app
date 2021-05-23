@@ -174,7 +174,7 @@ export class WeatherService {
           {
             "time": 1621702800,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 77.1,
@@ -193,7 +193,7 @@ export class WeatherService {
           {
             "time": 1621706400,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 74.06,
@@ -212,7 +212,7 @@ export class WeatherService {
           {
             "time": 1621710000,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 71.5,
@@ -231,7 +231,7 @@ export class WeatherService {
           {
             "time": 1621713600,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 69.46,
@@ -250,7 +250,7 @@ export class WeatherService {
           {
             "time": 1621717200,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 67.79,
@@ -269,7 +269,7 @@ export class WeatherService {
           {
             "time": 1621720800,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 66.39,
@@ -288,7 +288,7 @@ export class WeatherService {
           {
             "time": 1621724400,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 65.13,
@@ -307,7 +307,7 @@ export class WeatherService {
           {
             "time": 1621728000,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 64.01,
@@ -326,7 +326,7 @@ export class WeatherService {
           {
             "time": 1621731600,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 62.84,
@@ -345,7 +345,7 @@ export class WeatherService {
           {
             "time": 1621735200,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 61.85,
@@ -364,7 +364,7 @@ export class WeatherService {
           {
             "time": 1621738800,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 61.36,
@@ -630,7 +630,7 @@ export class WeatherService {
           {
             "time": 1621789200,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 81.75,
@@ -649,7 +649,7 @@ export class WeatherService {
           {
             "time": 1621792800,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 78.4,
@@ -668,7 +668,7 @@ export class WeatherService {
           {
             "time": 1621796400,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 75.41,
@@ -687,7 +687,7 @@ export class WeatherService {
           {
             "time": 1621800000,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 72.8,
@@ -706,7 +706,7 @@ export class WeatherService {
           {
             "time": 1621803600,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 70.56,
@@ -725,7 +725,7 @@ export class WeatherService {
           {
             "time": 1621807200,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 68.65,
@@ -744,7 +744,7 @@ export class WeatherService {
           {
             "time": 1621810800,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 66.94,
@@ -763,7 +763,7 @@ export class WeatherService {
           {
             "time": 1621814400,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 65.64,
@@ -782,7 +782,7 @@ export class WeatherService {
           {
             "time": 1621818000,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 64.66,
@@ -801,7 +801,7 @@ export class WeatherService {
           {
             "time": 1621821600,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 63.99,
@@ -820,7 +820,7 @@ export class WeatherService {
           {
             "time": 1621825200,
             "summary": "Clear",
-            "icon": "clear-night",
+            "icon": "sunny",
             "precipIntensity": 0,
             "precipProbability": 0,
             "temperature": 63.66,
