@@ -1,27 +1,49 @@
+
+
 # WeatherApp
+===============================
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+## Table of Contents
 
-## Development server
+* [About](#about)
+* [Installing](#installing)
+* [Features](#features)
+* [Libraries](#libraries)
+* [APIs](#api)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## About
 
-## Code scaffolding
+A minimalistic weather web application that displays the current
+temperature based on user location, and display the hourly and daily weather forecast.
+ 
+## Installing
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1- Clone the repo.
 
-## Build
+2- run `npm install`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+3- run `npm start`.
 
-## Running unit tests
+4- Navigate to `http://localhost:4200/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Features
 
-## Running end-to-end tests
+1. Display current temperature and the current short summary. 
+2. Display today's high and low temperatures. 
+3. Display text summary of today's forecast. 
+4. Display today's date. 
+5. Toggle between displaying Fahrenheit and Celsius degrees. 
+6. Display the hourly forecast. 24 instances of the upcoming 24 hours. 
+7. Display the daily forecast. 8 instances of the upcoming weekdays including today. 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Libraries
 
-## Further help
+1- Bootstrap 4
+The very popular CSS framework for layout and styling.  
+[Bootstrap 4](https://github.com/t-ho/ngx-ui-loader).
+## APIs
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1- `https://api.darksky.net/forecast/[API_KEY]/[latitude], [longitude] ` 
+
+Couldn't Fetch the data from the API due to CORS issue, I mocked up the data as a temp solution.
