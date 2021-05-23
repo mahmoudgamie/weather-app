@@ -1,12 +1,12 @@
-<div class="container">
-    <div class="p-5 m-5 background">
+<div class="mt-5 container">
+    <div class="p-5 background">
     <div class="row">
       <div class="col-sm-10">
         <h1 class="title">
           INSTAWEATHER
         </h1>
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-2 push-end">
         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
           <input type="radio" class="btn-check" (click)="unit = 'C'" name="btnradio" id="btnradio1" autocomplete="off"
             [checked]="unit === 'C'">
@@ -19,30 +19,30 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-10">
+      <div class="col-sm-9">
         <div class="location">
-          <p>New Cairo</p>
-          <p>{{weatherData.currently.time * 1000 | date: "E d, y" }}</p>
+          <h2 class="sub-title">New Cairo</h2>
+          <p class="date">{{weatherData.currently.time * 1000 | date: "E d, y" }}</p>
           <p>{{weatherData.currently.summary}}</p>
         </div>
       </div>
-      <div class="col-sm-2">
-        <p class="degree">{{weatherData.currently.temperature | temeratureConverter : unit}}</p>
-        <p>
+      <div class="col-sm-3 push-end">
+        <h2 class="degree current-temp">{{weatherData.currently.temperature | temeratureConverter : unit}}</h2>
+        <p class="current-summary">
           <span class="degree">{{weatherData.daily.data[0].temperatureHigh | temeratureConverter: unit}}</span> /
           <span class="degree">{{weatherData.daily.data[0].temperatureLow | temeratureConverter: unit}}</span>
         </p>
         <p>{{weatherData.daily.data[0].summary}}</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5">
       <ul class="nav nav-tabs">
         <li class="nav-item bg-transparent">
-          <a class="nav-link text-muted" [class.active-tab]="dataMode === 'daily'" (click)="dataMode = 'daily'"
+          <a class="nav-link text-white" [class.active-tab]="dataMode === 'daily'" (click)="dataMode = 'daily'"
             aria-current="page">Daily</a>
         </li>
         <li class="nav-item bg-transparent">
-          <a class="nav-link text-muted" [class.active-tab]="dataMode === 'hourly'"
+          <a class="nav-link text-white" [class.active-tab]="dataMode === 'hourly'"
             (click)="dataMode = 'hourly'">Houry</a>
         </li>
       </ul>

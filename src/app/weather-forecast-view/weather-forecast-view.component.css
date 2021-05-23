@@ -7,6 +7,22 @@
   background-size: cover;
 }
 
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 168.91px;
+  letter-spacing: 0.05em;
+}
+
 .active-tab {
   background-color: transparent;
   color: #fff !important;
@@ -14,8 +30,24 @@
   border-bottom: 4px solid #fff;
 }
 
-.btn-checked{
+.current-temp {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 230px;
+  letter-spacing: 0.05em;
+}
+
+.btn-checked {
   background-color: #6c757d !important;
   border-left: 3px solid #fff !important;
   opacity: 0.7 !important;
+}
+
+.push-end {
+  text-align: end;
+}
+
+.date, .current-summary {
+  margin-top: -50px;
 }
